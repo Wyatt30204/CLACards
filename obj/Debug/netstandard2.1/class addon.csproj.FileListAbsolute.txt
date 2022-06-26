@@ -1,0 +1,90 @@
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\class addon.deps.json
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\class addon.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\class addon.pdb
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\Mono.Cecil.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\MonoMod.Utils.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\MonoMod.RuntimeDetour.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.Physics2DModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\PhotonUnityNetworking.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\Sirenix.OdinInspector.Attributes.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\Unity.Postprocessing.Runtime.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.ParticleSystemModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\SonigonAudioEngine.Runtime.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\Unity.TextMeshPro.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.UI.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.UIModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.SpriteMaskModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.AudioModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\Photon3Unity3D.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\InControl.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\Assembly-CSharp-firstpass.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\Sirenix.Serialization.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\PhotonRealtime.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.PhysicsModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.AnimationModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.TextRenderingModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\FloatCrusher.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\QuatCompress.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.VRModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.UnityAnalyticsModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.IMGUIModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.JSONSerializeModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\HalfFloatASMDEF.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\EmoCompressUtilsASMDEF.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\BitpackersASMDEF.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\HalFloat.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.AssetBundleModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.ImageConversionModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.SharedInternalsModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.VehiclesModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.ClothModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.AccessibilityModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.AIModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.ClusterInputModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.ClusterRendererModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.DirectorModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.GridModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.LocalizationModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.ScreenCaptureModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.SpriteShapeModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.StreamingModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.StyleSheetsModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.TerrainModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.TilemapModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.UnityConnectModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.UnityWebRequestModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.UnityWebRequestAudioModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.UnityWebRequestTextureModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.VFXModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.VideoModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.WindModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.TerrainPhysicsModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.UNETModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.GameCenterModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.InputModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.TextCoreModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.UIElementsModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.UnityWebRequestAssetBundleModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.UnityWebRequestWWWModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.XRModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.ARModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.CrashReportingModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\UnityEngine.PerformanceReportingModule.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\Sirenix.Serialization.Config.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\Sirenix.Utilities.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\ByteConverter.dll
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\0Harmony.xml
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\BepInEx.xml
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\MonoMod.Utils.xml
+C:\Users\fireb\source\repos\class addon\class addon\bin\Debug\netstandard2.1\MonoMod.RuntimeDetour.xml
+C:\Users\fireb\source\repos\class addon\class addon\obj\Debug\netstandard2.1\class addon.csproj.AssemblyReference.cache
+C:\Users\fireb\source\repos\class addon\class addon\obj\Debug\netstandard2.1\class addon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fireb\source\repos\class addon\class addon\obj\Debug\netstandard2.1\class addon.AssemblyInfoInputs.cache
+C:\Users\fireb\source\repos\class addon\class addon\obj\Debug\netstandard2.1\class addon.AssemblyInfo.cs
+C:\Users\fireb\source\repos\class addon\class addon\obj\Debug\netstandard2.1\class addon.csproj.CoreCompileInputs.cache
+C:\Users\fireb\source\repos\class addon\class addon\obj\Debug\netstandard2.1\class addon.csproj.CopyComplete
+C:\Users\fireb\source\repos\class addon\class addon\obj\Debug\netstandard2.1\class addon.dll
+C:\Users\fireb\source\repos\class addon\class addon\obj\Debug\netstandard2.1\class addon.pdb
+C:\Users\fireb\Desktop\rounds mods\Debug\netstandard2.1\class addon.deps.json
+C:\Users\fireb\Desktop\rounds mods\Debug\netstandard2.1\class addon.dll
+C:\Users\fireb\Desktop\rounds mods\Debug\netstandard2.1\class addon.pdb
