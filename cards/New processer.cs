@@ -9,32 +9,31 @@ using UnityEngine;
 
 namespace class_addon.cards
 {
-    class ihavethehighground : CustomCard
+    class Newprocessor : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-
-
-
+            gun.damage = 1.5f;
+            statModifiers.secondsToTakeDamageOver = 6;
+            gun.projectileSize = 1.3f;
+            statModifiers.lifeSteal = 1.3f;
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
-            gun.damage *= 5;
             //Edits values on player when card is selected
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Run when the card is removed from the player
         }
-
         protected override string GetTitle()
         {
-            return "I Have The High Ground";
+            return "New Processor";
         }
         protected override string GetDescription()
         {
-            return "I'ts over anna-kin, I HAVE THE HIGH ROUNDS!";
+            return "Sweet upgrade new processor";
         }
         protected override GameObject GetCardArt()
         {
@@ -42,7 +41,7 @@ namespace class_addon.cards
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return RarityLib.Utils.RarityUtils.GetRarity("Mythical");
+            return CardInfo.Rarity.Rare;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -52,16 +51,27 @@ namespace class_addon.cards
                 {
                     positive = true,
                     stat = "damage",
-                    amount = "+500%",
+                    amount = "+50%",
                 },
                 new CardInfoStat()
-               
+                {
+                    positive = true,
+                    stat = "Health Damage",
+                    amount = "Dng taking over time 6sec",
+                },
+                new CardInfoStat()
+                {
+                    positive = true,
+                    stat = "Life Steal",
+                    amount = "+30%"
+                }
+
 
             };
         }
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.TechWhite;
+            return CardThemeColor.CardThemeColorType.MagicPink;
         }
         public override string GetModName()
         {

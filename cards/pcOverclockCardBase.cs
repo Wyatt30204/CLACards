@@ -25,7 +25,6 @@ namespace class_addon.cards
                 // Give Bad
                 ModdingUtils.Utils.Cards.instance.AddCardToPlayer(player, ModdingUtils.Utils.Cards.instance.GetCardWithName("Pc overload"), false, "GO", 0, 0);
             } else if (randomNumber == 2)
-
             {
                 // Give Good
                 ModdingUtils.Utils.Cards.instance.AddCardToPlayer(player, ModdingUtils.Utils.Cards.instance.GetCardWithName("Pc overclock"), false, "BA", 0, 0);

@@ -21,6 +21,7 @@ namespace class_addon.cards
             statModifiers.numberOfJumps = 99999999;
             statModifiers.respawns = 1;
             gun.timeBetweenBullets = 0;
+            gun.damage = 0.5f;
             
 
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
@@ -48,7 +49,7 @@ namespace class_addon.cards
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Rare;
+            return RarityLib.Utils.RarityUtils.GetRarity("Mythical");
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -94,7 +95,13 @@ namespace class_addon.cards
                {
                    positive = true,
                    stat = "jump",
-                   amount = ".5"
+                   amount = "inf"
+               },
+               new CardInfoStat()
+               {
+                   positive = false,
+                   stat = "damage",
+                   amount = "-50%"
                }
             };
         }
