@@ -15,15 +15,15 @@ namespace classAddon
     [BepInDependency("pykess.rounds.plugins.cardchoicespawnuniquecardpatch",
 BepInDependency.DependencyFlags.HardDependency)]
 
-    [BepInPlugin("CLA", "classAddon", "1.1.2")]
+    [BepInPlugin("CLA", "classAddon", "1.0.4")]
 
     [BepInProcess("Rounds.exe")]
     public class classAddon : BaseUnityPlugin
     {
-        private const string ModId = "CLA";
+        private const string ModId = "CLACards";
         private const string ModName = "classAddon";
-        public const string Version = "1.1.2";
-        public const string ModInitials = "CLA";
+        public const string Version = "1.0.4";
+        public const string ModInitials = "CLAC";
         public static classAddon ins { get; private set; }
         void Awake()
         {
@@ -34,7 +34,7 @@ BepInDependency.DependencyFlags.HardDependency)]
 
         }
 
-        void Start()
+        void Start()    
         {
             //CustomCard.BuildCard<pcoverclock>();
             //CustomCard.BuildCard<pcoverclockcardbad>((pcoverclockcardbadCardInfo) => ModdingUtils.Utils.Cards.instance.AddHiddenCard(pcoverclockcardbadCardInfo));

@@ -30,11 +30,11 @@ namespace class_addon.cards
 
         protected override string GetTitle()
         {
-            return "ihavethehighground";
+            return "I Have The High Ground";
         }
         protected override string GetDescription()
         {
-            return "I have the high ground";
+            return "I'ts over anna-kin, I HAVE THE HIGH ROUNDS!";
         }
         protected override GameObject GetCardArt()
         {
@@ -53,7 +53,10 @@ namespace class_addon.cards
                     positive = true,
                     stat = "damage",
                     amount = "+400%",
-                }
+                },
+                new CardInfoStat()
+               
+
             };
         }
         protected override CardThemeColor.CardThemeColorType GetTheme()

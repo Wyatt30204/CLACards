@@ -17,7 +17,7 @@ namespace class_addon.cards
             gun.attackSpeed = 0.7f;
             gun.ammoReg = 0.7f;
             statModifiers.health = 1.4f;
-
+            
 
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
         }
@@ -36,7 +36,7 @@ namespace class_addon.cards
         }
         protected override string GetDescription()
         {
-            return "speed is too powerful trade it in for remedy";
+            return "Speed is too powerful, trade it in for remedy";
         }
         protected override GameObject GetCardArt()
         {

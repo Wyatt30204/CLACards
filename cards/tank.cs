@@ -19,11 +19,12 @@ namespace class_addon.cards
             statModifiers.health =1.5f;
             gun.damage = 3.0f;
             gun.projectileSpeed = 2.0f;
+ 
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
-            ModdingUtils.Utils.Cards.instance.AddCardToPlayer(player, ModdingUtils.Utils.Cards.instance.GetCardWithObjectName("Explosive bullet"), true, "EX", 0, 0);
+            ModdingUtils.Utils.Cards.instance.AddCardToPlayer(player, ModdingUtils.Utils.Cards.instance.GetCardWithObjectName("Explosive bullet"), true, "TA", 0, 0);
             //Edits values on player when card is selected
         }
         
@@ -34,11 +35,11 @@ namespace class_addon.cards
 
         protected override string GetTitle()
         {
-            return "tank cannon";
+            return "Tank Cannon";
         }
         protected override string GetDescription()
         {
-            return "speed is too powerful trade it in for remedy";
+            return "Welcome to Ukraine motherfucker. quote \"Go Fuck Yourself!\"";
         }
         protected override GameObject GetCardArt()
         {
@@ -101,6 +102,8 @@ namespace class_addon.cards
                     stat = "exsplosive projectile",
                     amount = "Big boom",
                 },
+                new CardInfoStat()
+           
             };
         }
         protected override CardThemeColor.CardThemeColorType GetTheme()

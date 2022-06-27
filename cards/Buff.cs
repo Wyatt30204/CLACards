@@ -29,14 +29,13 @@ namespace class_addon.cards
         {
             //Run when the card is removed from the player
         }
-
         protected override string GetTitle()
         {
             return "Buff";
         }
         protected override string GetDescription()
         {
-            return "i feel bad for Nerfing you bro";
+            return "I feel bad for nerfing you bro";
         }
         protected override GameObject GetCardArt()
         {
