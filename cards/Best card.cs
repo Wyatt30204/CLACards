@@ -9,21 +9,25 @@ using UnityEngine;
 
 namespace class_addon.cards
 {
-    class pcoverclockcardgood : CustomCard
+    class Bestcard : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-            statModifiers.health = 1.5f;
-            gun.reloadTime = 1.5f;
-            gun.projectileSpeed = 1.5f;
-            statModifiers.movementSpeed = 1.5f;
-            block.additionalBlocks = 2;
-            gun.damage = 1.5f;
+            statModifiers.movementSpeed = 0.7f;
+            gun.attackSpeed = 0.5f;
+            gun.ammoReg = 5.0f;
+            statModifiers.health = 2.0f;
+            statModifiers.jump = 0.5f;
+            statModifiers.numberOfJumps = 99999999;
+            statModifiers.respawns = 1;
+            gun.timeBetweenBullets = 0;
+            
 
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
+            //Edits values on player when card is selected
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
@@ -32,11 +36,11 @@ namespace class_addon.cards
 
         protected override string GetTitle()
         {
-            return "Pc Overclock";
+            return "Best Card";
         }
         protected override string GetDescription()
         {
-            return "GTX Overclocked? or fried";
+            return "When you have had enough";
         }
         protected override GameObject GetCardArt()
         {
@@ -44,7 +48,7 @@ namespace class_addon.cards
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return CardInfo.Rarity.Uncommon;
+            return CardInfo.Rarity.Rare;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -52,45 +56,51 @@ namespace class_addon.cards
             {
                 new CardInfoStat()
                 {
-                    positive = true,
-                    stat = "Damgae",
-                    amount = "+50%",
+                    positive = false,
+                    stat = "Movement Speed",
+                    amount = "-30%",
                 },
                 new CardInfoStat()
                 {
                     positive = true,
                     stat = "Relaod Speed",
-                    amount = "+50%",
+                    amount = "+100%",
                 },
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Projectile Speed",
-                    amount = "+50%",
+                    stat = "ATKSPD",
+                    amount = "+100%",
                 },
                 new CardInfoStat()
                 {
                     positive = true,
                     stat = "Health",
-                    amount = "+50%",
+                    amount = "+100%",
                 },
-                 new CardInfoStat()
-                {
-                    positive = true,
-                    stat = "Movement Speed",
-                    amount = "+50%",
-                },
-                  new CardInfoStat()
-                {
-                    positive = true,
-                    stat = "Blocks",
-                    amount = "+2",
-                }
+               new CardInfoStat()
+               {
+                   positive = true,
+                   stat = "fligt",
+                   amount = "To The Moon"
+               },
+               new CardInfoStat()
+               {
+                   positive = true,
+                   stat = "revive",
+                   amount = "1",
+               }, 
+               new CardInfoStat()
+               {
+                   positive = true,
+                   stat = "jump",
+                   amount = ".5"
+               }
             };
         }
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.NatureBrown;
+            return CardThemeColor.CardThemeColorType.PoisonGreen;
         }
         public override string GetModName()
         {
