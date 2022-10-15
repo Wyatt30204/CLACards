@@ -1,105 +1,67 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnboundLib;
-using UnboundLib.Cards;
-using UnityEngine;
+﻿using UnboundLib;
+using ModsPlus;
+using UnboundLib.Networking;
 
 namespace class_addon.cards
 {
-    class pcoverclock : CustomCard
+    public class pcOverclockCardBase : CustomEffectCard<PcOCEffect>
     {
-        public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
+        public override CardDetails Details => new CardDetails
         {
-        }
-        public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
+            Title = "PC Overclock",
+            Description = "Overclock your pc, hopefully it doesnt go <color=ff0000>wrong</color>",
+            ModName = "CLA",
+            Rarity = CardInfo.Rarity.Uncommon,
+            Stats = new []
+            { 
+                new CardInfoStat()
+                {
+                    stat = "Your PC",
+                    amount = "Overclock",
+                    positive = true
+                },
+                new CardInfoStat()
+                {
+                    stat="Your PC",
+                    amount = "Overclock",
+                    positive=false
+                }
+            }
+            
+           
+        };
+    }
+
+     public class PcOCEffect : CardEffect
+    {
+        private int randomNumber = -1;
+
+        void Awake()
         {
-            //Edits values on player when card is selected
-            int randomNumber;
-            System.Random random = new System.Random();
-            randomNumber = random.Next(1, 3);
-            if (randomNumber == 1)
+            if (player.data.view.IsMine)
             {
-                // Give Bad
-                ModdingUtils.Utils.Cards.instance.AddCardToPlayer(player, ModdingUtils.Utils.Cards.instance.GetCardWithName("Pc overload"), false, "GO", 0, 0);
-            } else if (randomNumber == 2)
-            {
-                // Give Good
-                ModdingUtils.Utils.Cards.instance.AddCardToPlayer(player, ModdingUtils.Utils.Cards.instance.GetCardWithName("Pc overclock"), false, "BA", 0, 0);
+                randomNumber = UnityEngine.Random.Range(0, 1);
+                NetworkingManager.RPC_Others(typeof(PcOCEffect), nameof(SyncRandomNumber), randomNumber, player.playerID);
+
+                if (randomNumber == 0)
+                {
+                    // 50% chance of this
+                    ModdingUtils.Utils.Cards.instance.AddCardToPlayer(player, ModdingUtils.Utils.Cards.instance.GetCardWithObjectName("PcOverclockCardBad"), true, "PC", 1f, 1f, true);
+                }
+                else
+                {
+                    // 50% chance of this
+                    ModdingUtils.Utils.Cards.instance.AddCardToPlayer(player, ModdingUtils.Utils.Cards.instance.GetCardWithObjectName("PcOverclockCardGood"), true, "PC", 1f, 1f, true);
+                }
             }
         }
-        public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
-        {
-            //Run when the card is removed from the player
-        }
 
-        protected override string GetTitle()
+        [UnboundRPC]
+        public static void SyncRandomNumber(int randomNumber, int playerId)
         {
-            return "Pc Overclocking";
-        }
-        protected override string GetDescription()
-        {
-            return "GTX Overclocked? or fried";
-        }
-        protected override GameObject GetCardArt()
-        {
-            return null;
-        }
-        protected override CardInfo.Rarity GetRarity()
-        {
-            return CardInfo.Rarity.Uncommon;
-        }
-        protected override CardInfoStat[] GetStats()
-        {
-            return new CardInfoStat[]
-            {
-                new CardInfoStat()
-                {
-                    positive = true,
-                    stat = "Damgae",
-                    amount = "+50%",
-                },
-                new CardInfoStat()
-                {
-                    positive = true,
-                    stat = "Relaod Speed",
-                    amount = "+50%",
-                },
-                new CardInfoStat()
-                {
-                    positive = true,
-                    stat = "Projectile Speed",
-                    amount = "+50%",
-                },
-                new CardInfoStat()
-                {
-                    positive = true,
-                    stat = "Health",
-                    amount = "+50%",
-                },
-                 new CardInfoStat()
-                {
-                    positive = true,
-                    stat = "Movement Speed",
-                    amount = "+50%",
-                },
-                  new CardInfoStat()
-                {
-                    positive = true,
-                    stat = "Blocks",
-                    amount = "+2",
-                }
-            };
-        }
-        protected override CardThemeColor.CardThemeColorType GetTheme()
-        {
-            return CardThemeColor.CardThemeColorType.NatureBrown;
-        }
-        public override string GetModName()
-        {
-            return classAddon.classAddon.ModInitials;
+            var player = PlayerManager.instance.GetPlayerWithID(playerId);
+            var rngEffect = player.GetComponent<PcOCEffect>();
+            rngEffect.randomNumber = randomNumber;
         }
     }
 }

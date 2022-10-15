@@ -82,9 +82,21 @@ C:\Users\fireb\source\repos\class addon\class addon\obj\Debug\netstandard2.1\cla
 C:\Users\fireb\source\repos\class addon\class addon\obj\Debug\netstandard2.1\class addon.AssemblyInfoInputs.cache
 C:\Users\fireb\source\repos\class addon\class addon\obj\Debug\netstandard2.1\class addon.AssemblyInfo.cs
 C:\Users\fireb\source\repos\class addon\class addon\obj\Debug\netstandard2.1\class addon.csproj.CoreCompileInputs.cache
-C:\Users\fireb\source\repos\class addon\class addon\obj\Debug\netstandard2.1\class addon.csproj.CopyComplete
-C:\Users\fireb\source\repos\class addon\class addon\obj\Debug\netstandard2.1\class addon.dll
-C:\Users\fireb\source\repos\class addon\class addon\obj\Debug\netstandard2.1\class addon.pdb
 C:\Users\fireb\Desktop\rounds mods\Debug\netstandard2.1\class addon.deps.json
 C:\Users\fireb\Desktop\rounds mods\Debug\netstandard2.1\class addon.dll
 C:\Users\fireb\Desktop\rounds mods\Debug\netstandard2.1\class addon.pdb
+C:\Users\fireb\source\repos\class addon\class addon\obj\Debug\netstandard2.1\class addon.csproj.CopyComplete
+C:\Users\fireb\source\repos\class addon\class addon\obj\Debug\netstandard2.1\class addon.dll
+C:\Users\fireb\source\repos\class addon\class addon\obj\Debug\netstandard2.1\class addon.pdb
+C:\Users\fireb\Desktop\R Pubs\CLACards build\class addon\class addon\obj\Debug\netstandard2.1\class addon.csproj.AssemblyReference.cache
+C:\Users\fireb\Desktop\R Pubs\CLACards build\class addon\class addon\obj\Debug\netstandard2.1\class addon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fireb\Desktop\R Pubs\CLACards build\class addon\class addon\obj\Debug\netstandard2.1\class addon.AssemblyInfoInputs.cache
+C:\Users\fireb\Desktop\R Pubs\CLACards build\class addon\class addon\obj\Debug\netstandard2.1\class addon.AssemblyInfo.cs
+C:\Users\fireb\Desktop\R Pubs\CLACards build\class addon\class addon\obj\Debug\netstandard2.1\class addon.csproj.CoreCompileInputs.cache
+C:\Users\fireb\Desktop\R Pubs\CLACards build\class addon\class addon\obj\Debug\netstandard2.1\class addon.dll
+C:\Users\fireb\Desktop\R Pubs\CLACards build\class addon\class addon\obj\Debug\netstandard2.1\class addon.pdb
+C:\Users\fireb\Desktop\R Pubs\CLACards build\class addon\class addon\bin\Release\netstandard2.1\Debug\netstandard2.1\class addon.deps.json
+C:\Users\fireb\Desktop\R Pubs\CLACards build\class addon\class addon\bin\Release\netstandard2.1\Debug\netstandard2.1\class addon.dll
+C:\Users\fireb\Desktop\R Pubs\CLACards build\class addon\class addon\bin\Release\netstandard2.1\Debug\netstandard2.1\class addon.pdb
+C:\Users\fireb\Desktop\R Pubs\CLACards build\class addon\class addon\bin\Release\netstandard2.1\Debug\netstandard2.1\Photon3Unity3D.dll
+C:\Users\fireb\Desktop\R Pubs\CLACards build\class addon\class addon\obj\Debug\netstandard2.1\class addon.csproj.CopyComplete

@@ -4,39 +4,57 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <RootNamespace>class_addon</RootNamespace>
     <Nullable>enable</Nullable>
-    <BaseOutputPath>C:\Users\fireb\Desktop\rounds mods\</BaseOutputPath>
+    <BaseOutputPath>C:\Users\fireb\Desktop\R Pubs\CLACards build\class addon\class addon\bin\Release\netstandard2.1</BaseOutputPath>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <Company>$(Authors)</Company>
+    <Authors>$(CLACards)</Authors>
+    <Version></Version>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>..\..\..\..\Downloads\BepInEx_x64_5.4.19.0\BepInEx\core\0Harmony.dll</HintPath>
+      <HintPath>bin\Release\netstandard2.1\Debug\netstandard2.1\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\ROUNDS\Rounds_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>bin\Release\netstandard2.1\Debug\netstandard2.1\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx">
-      <HintPath>..\..\..\..\Downloads\BepInEx_x64_5.4.19.0\BepInEx\core\BepInEx.dll</HintPath>
+      <HintPath>bin\Release\netstandard2.1\Debug\netstandard2.1\BepInEx.dll</HintPath>
     </Reference>
     <Reference Include="CardChoiceSpawnUniqueCardPatch">
-      <HintPath>..\..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\ROUNDS\profiles\modding test\BepInEx\plugins\Pykess-CardChoiceSpawnUniqueCardPatch\CardChoiceSpawnUniqueCardPatch.dll</HintPath>
-    </Reference>
-    <Reference Include="ClassesManagerReborn">
-      <HintPath>..\..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\ROUNDS\profiles\Testing\BepInEx\plugins\Root-Classes_Manager_Reborn\ClassesManagerReborn.dll</HintPath>
+      <HintPath>bin\Release\netstandard2.1\Debug\netstandard2.1\CardChoiceSpawnUniqueCardPatch.dll</HintPath>
     </Reference>
     <Reference Include="ModdingUtils">
-      <HintPath>..\..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\ROUNDS\profiles\modding test\BepInEx\plugins\Pykess-ModdingUtils\ModdingUtils.dll</HintPath>
+      <HintPath>bin\Release\netstandard2.1\Debug\netstandard2.1\ModdingUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="ModsPlus">
+      <HintPath>bin\Release\netstandard2.1\Debug\netstandard2.1\ModsPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon3Unity3D">
+      <HintPath>..\..\..\CLA Dlls\Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonUnityNetworking">
+      <HintPath>bin\Release\netstandard2.1\Debug\netstandard2.1\PhotonUnityNetworking.dll</HintPath>
     </Reference>
     <Reference Include="RarityLib">
-      <HintPath>..\..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\ROUNDS\profiles\Testing\BepInEx\plugins\Root-RarityLib\RarityLib.dll</HintPath>
+      <HintPath>bin\Release\netstandard2.1\Debug\netstandard2.1\RarityLib.dll</HintPath>
+    </Reference>
+    <Reference Include="SonigonAudioEngine.Runtime">
+      <HintPath>bin\Release\netstandard2.1\Debug\netstandard2.1\SonigonAudioEngine.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnboundLib">
-      <HintPath>..\..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\ROUNDS\profiles\modding test\BepInEx\plugins\willis81808-UnboundLib\UnboundLib.dll</HintPath>
+      <HintPath>bin\Release\netstandard2.1\Debug\netstandard2.1\UnboundLib.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\ROUNDS\Rounds_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>bin\Release\netstandard2.1\Debug\netstandard2.1\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\ROUNDS\Rounds_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>bin\Release\netstandard2.1\Debug\netstandard2.1\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
   </ItemGroup>
 

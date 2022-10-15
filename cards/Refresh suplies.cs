@@ -9,39 +9,30 @@ using UnityEngine;
 
 namespace class_addon.cards
 {
-    class BestCard : CustomCard
+    class RefreshAmmo: CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-            statModifiers.movementSpeed = 0.7f;
-            gun.attackSpeed = 0.5f;
-            gun.ammoReg = 5.0f;
-            statModifiers.health = 2.0f;
-            statModifiers.jump = 0.5f;
-            statModifiers.numberOfJumps = 99999999;
-            statModifiers.respawns = 1;
-            gun.timeBetweenBullets = 0;
-            gun.damage = 0.5f;
-            
-
-            //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
+            gun.ammo = 5;//Edits values on card itself, which are then applied to the player in `ApplyCardStats`
         }
+
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
+            gun.ignoreWalls = true;
+            gun.reloadTime = 1.5f;
             //Edits values on player when card is selected
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
             //Run when the card is removed from the player
         }
-
         protected override string GetTitle()
         {
-            return "Best Card";
+            return "Refresh Ammo";
         }
         protected override string GetDescription()
         {
-            return "When you have had enough";
+            return "When 3 Isn't Enough";
         }
         protected override GameObject GetCardArt()
         {
@@ -49,7 +40,7 @@ namespace class_addon.cards
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return RarityLib.Utils.RarityUtils.GetRarity("Mythical");
+            return CardInfo.Rarity.Uncommon;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -57,15 +48,15 @@ namespace class_addon.cards
             {
                 new CardInfoStat()
                 {
-                    positive = false,
-                    stat = "Movement Speed",
-                    amount = "-30%",
+                    positive = true,
+                    stat = "ammo",
+                    amount = "+4",
                 },
                 new CardInfoStat()
                 {
                     positive = true,
-                    stat = "Relaod Speed",
-                    amount = "+100%",
+                    stat = "burst",
+                    amount = "3",
                 },
                 new CardInfoStat()
                 {
@@ -75,39 +66,16 @@ namespace class_addon.cards
                 },
                 new CardInfoStat()
                 {
-                    positive = true,
-                    stat = "Health",
-                    amount = "+100%",
+                    positive = false,
+                    stat = "reload speed",
+                    amount = "-50%",
                 },
-               new CardInfoStat()
-               {
-                   positive = true,
-                   stat = "fligt",
-                   amount = "To The Moon"
-               },
-               new CardInfoStat()
-               {
-                   positive = true,
-                   stat = "revive",
-                   amount = "1",
-               }, 
-               new CardInfoStat()
-               {
-                   positive = true,
-                   stat = "jump",
-                   amount = "inf"
-               },
-               new CardInfoStat()
-               {
-                   positive = false,
-                   stat = "damage",
-                   amount = "-50%"
-               }
+                
             };
         }
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.PoisonGreen;
+            return CardThemeColor.CardThemeColorType.MagicPink;
         }
         public override string GetModName()
         {

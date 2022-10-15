@@ -9,26 +9,23 @@ using UnityEngine;
 
 namespace class_addon.cards
 {
-    class BestCard : CustomCard
+    class Mysterycard : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-            statModifiers.movementSpeed = 0.7f;
-            gun.attackSpeed = 0.5f;
-            gun.ammoReg = 5.0f;
-            statModifiers.health = 2.0f;
-            statModifiers.jump = 0.5f;
-            statModifiers.numberOfJumps = 99999999;
+            statModifiers.movementSpeed = 2.0f;
+            gun.attackSpeed = 0.1f;
+            gun.ammoReg = 0.1f;
+            statModifiers.health = 0.9f;
+            gun.bodyRecoil = 2.0f;
             statModifiers.respawns = 1;
-            gun.timeBetweenBullets = 0;
-            gun.damage = 0.5f;
-            
+
 
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
-            //Edits values on player when card is selected
+            ModdingUtils.Utils.Cards.instance.AddCardToPlayer(player, ModdingUtils.Utils.Cards.instance.GetCardWithObjectName("Explosive bullet"), true, "TA", 0, 0);
         }
         public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
         {
@@ -37,11 +34,11 @@ namespace class_addon.cards
 
         protected override string GetTitle()
         {
-            return "Best Card";
+            return "Mystery Card";
         }
         protected override string GetDescription()
         {
-            return "When you have had enough";
+            return "??? who knows";
         }
         protected override GameObject GetCardArt()
         {
@@ -49,7 +46,7 @@ namespace class_addon.cards
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return RarityLib.Utils.RarityUtils.GetRarity("Mythical");
+            return CardInfo.Rarity.Rare;
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -57,52 +54,28 @@ namespace class_addon.cards
             {
                 new CardInfoStat()
                 {
+                    positive = true,
+                    stat = "????",
+                    amount = "???",
+                },
+                new CardInfoStat()
+                {
+                    positive = true,
+                    stat = "???",
+                    amount = "???",
+                },
+                new CardInfoStat()
+                {
                     positive = false,
-                    stat = "Movement Speed",
-                    amount = "-30%",
+                    stat = "???",
+                    amount = "???",
                 },
                 new CardInfoStat()
                 {
-                    positive = true,
-                    stat = "Relaod Speed",
-                    amount = "+100%",
-                },
-                new CardInfoStat()
-                {
-                    positive = true,
-                    stat = "ATKSPD",
-                    amount = "+100%",
-                },
-                new CardInfoStat()
-                {
-                    positive = true,
-                    stat = "Health",
-                    amount = "+100%",
-                },
-               new CardInfoStat()
-               {
-                   positive = true,
-                   stat = "fligt",
-                   amount = "To The Moon"
-               },
-               new CardInfoStat()
-               {
-                   positive = true,
-                   stat = "revive",
-                   amount = "1",
-               }, 
-               new CardInfoStat()
-               {
-                   positive = true,
-                   stat = "jump",
-                   amount = "inf"
-               },
-               new CardInfoStat()
-               {
-                   positive = false,
-                   stat = "damage",
-                   amount = "-50%"
-               }
+                    positive = false,
+                    stat = "???",
+                    amount = "???",
+                }
             };
         }
         protected override CardThemeColor.CardThemeColorType GetTheme()

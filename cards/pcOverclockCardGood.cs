@@ -1,4 +1,6 @@
-﻿using System;
+﻿using class_addon.Effects;
+using ModsPlus;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,46 +11,16 @@ using UnityEngine;
 
 namespace class_addon.cards
 {
-    class pcoverclockcardgood : CustomCard
+    class pcoverclockcardgood : CustomEffectCard<NoEffect>
     {
-        public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
+        public override CardDetails Details => new CardDetails
         {
-            statModifiers.health = 1.5f;
-            gun.reloadTime = 1.5f;
-            gun.projectileSpeed = 1.5f;
-            statModifiers.movementSpeed = 1.5f;
-            block.additionalBlocks = 2;
-            gun.damage = 1.5f;
-
-            //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
-        }
-        public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
-        {
-        }
-        public override void OnRemoveCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)
-        {
-            //Run when the card is removed from the player
-        }
-
-        protected override string GetTitle()
-        {
-            return "Pc Overclock";
-        }
-        protected override string GetDescription()
-        {
-            return "GTX Overclocked? or fried";
-        }
-        protected override GameObject GetCardArt()
-        {
-            return null;
-        }
-        protected override CardInfo.Rarity GetRarity()
-        {
-            return CardInfo.Rarity.Uncommon;
-        }
-        protected override CardInfoStat[] GetStats()
-        {
-            return new CardInfoStat[]
+            Title = "PC Overclock",
+            Description = "GTX Overclocked? or fried",
+            ModName = "CLA",
+            Rarity = CardInfo.Rarity.Uncommon,
+            Theme = CardThemeColor.CardThemeColorType.NatureBrown,
+            Stats = new[]
             {
                 new CardInfoStat()
                 {
@@ -86,15 +58,19 @@ namespace class_addon.cards
                     stat = "Blocks",
                     amount = "+2",
                 }
-            };
-        }
-        protected override CardThemeColor.CardThemeColorType GetTheme()
+            }
+        };
+        public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-            return CardThemeColor.CardThemeColorType.NatureBrown;
+            statModifiers.health = 1.5f;
+            gun.reloadTime = 1.5f;
+            gun.projectileSpeed = 1.5f;
+            statModifiers.movementSpeed = 1.5f;
+            block.additionalBlocks = 2;
+            gun.damage = 1.5f;
+
+            //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
         }
-        public override string GetModName()
-        {
-            return classAddon.classAddon.ModInitials;
-        }
+
     }
 }

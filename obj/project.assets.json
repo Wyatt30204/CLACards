@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fireb\\source\\repos\\class addon\\class addon\\class addon.csproj",
+      "projectUniqueName": "C:\\Users\\fireb\\Desktop\\R Pubs\\CLACards build\\class addon\\class addon\\class addon.csproj",
       "projectName": "class addon",
-      "projectPath": "C:\\Users\\fireb\\source\\repos\\class addon\\class addon\\class addon.csproj",
+      "projectPath": "C:\\Users\\fireb\\Desktop\\R Pubs\\CLACards build\\class addon\\class addon\\class addon.csproj",
       "packagesPath": "C:\\Users\\fireb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fireb\\source\\repos\\class addon\\class addon\\obj\\",
+      "outputPath": "C:\\Users\\fireb\\Desktop\\R Pubs\\CLACards build\\class addon\\class addon\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fireb\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -51,7 +51,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -60,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

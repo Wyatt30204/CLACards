@@ -9,20 +9,16 @@ using UnityEngine;
 
 namespace class_addon.cards
 {
-    class BestCard : CustomCard
+    class LowRider : CustomCard
     {
         public override void SetupCard(CardInfo cardInfo, Gun gun, ApplyCardStats cardStats, CharacterStatModifiers statModifiers, Block block)
         {
-            statModifiers.movementSpeed = 0.7f;
-            gun.attackSpeed = 0.5f;
-            gun.ammoReg = 5.0f;
-            statModifiers.health = 2.0f;
-            statModifiers.jump = 0.5f;
-            statModifiers.numberOfJumps = 99999999;
-            statModifiers.respawns = 1;
-            gun.timeBetweenBullets = 0;
-            gun.damage = 0.5f;
-            
+            statModifiers.movementSpeed = 2.0f;
+            gun.attackSpeed = 2.0f;
+            gun.ammoReg = 1.5f;
+            statModifiers.health = 0.7f;
+            statModifiers.secondsToTakeDamageOver = 7;
+
 
             //Edits values on card itself, which are then applied to the player in `ApplyCardStats`
         }
@@ -34,14 +30,13 @@ namespace class_addon.cards
         {
             //Run when the card is removed from the player
         }
-
         protected override string GetTitle()
         {
-            return "Best Card";
+            return "Low Rider";
         }
         protected override string GetDescription()
         {
-            return "When you have had enough";
+            return "When you wheels are pimp";
         }
         protected override GameObject GetCardArt()
         {
@@ -49,7 +44,7 @@ namespace class_addon.cards
         }
         protected override CardInfo.Rarity GetRarity()
         {
-            return RarityLib.Utils.RarityUtils.GetRarity("Mythical");
+            return CardInfo.Rarity.Rare; 
         }
         protected override CardInfoStat[] GetStats()
         {
@@ -57,15 +52,15 @@ namespace class_addon.cards
             {
                 new CardInfoStat()
                 {
-                    positive = false,
+                    positive = true,
                     stat = "Movement Speed",
-                    amount = "-30%",
+                    amount = "+100%",
                 },
                 new CardInfoStat()
                 {
                     positive = true,
                     stat = "Relaod Speed",
-                    amount = "+100%",
+                    amount = "+50%",
                 },
                 new CardInfoStat()
                 {
@@ -75,39 +70,21 @@ namespace class_addon.cards
                 },
                 new CardInfoStat()
                 {
-                    positive = true,
+                    positive = false,
                     stat = "Health",
-                    amount = "+100%",
+                    amount = "-30%",
                 },
-               new CardInfoStat()
-               {
-                   positive = true,
-                   stat = "fligt",
-                   amount = "To The Moon"
-               },
-               new CardInfoStat()
-               {
-                   positive = true,
-                   stat = "revive",
-                   amount = "1",
-               }, 
-               new CardInfoStat()
-               {
-                   positive = true,
-                   stat = "jump",
-                   amount = "inf"
-               },
-               new CardInfoStat()
-               {
-                   positive = false,
-                   stat = "damage",
-                   amount = "-50%"
-               }
+                new CardInfoStat()
+                {
+                    positive = true,
+                    stat = "seconds till death 5",
+                    amount = "+7 sec"
+                }
             };
         }
         protected override CardThemeColor.CardThemeColorType GetTheme()
         {
-            return CardThemeColor.CardThemeColorType.PoisonGreen;
+            return CardThemeColor.CardThemeColorType.MagicPink;
         }
         public override string GetModName()
         {
